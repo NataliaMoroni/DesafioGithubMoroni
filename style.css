@@ -327,6 +327,10 @@ h2 {
   background-color: #002C54;
 }
 
-.contenedor__home__foto:hover{
-    transform:rotate(360geg);
+.equipo__galeria{
+
+}
+
+.equipo__galeria__imagen{
+    transition: all 3s;
 }
