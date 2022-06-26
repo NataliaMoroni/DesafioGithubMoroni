@@ -14,6 +14,8 @@
    rel="stylesheet"
    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>I+DEA</title>
 </head>
 <body>
@@ -45,8 +47,10 @@
     </header>
     <!--Fin header-->
         <!--Home-->
-        <section class="contenedor__home">
-            <img src="./multimedia/imagenes/auto.webp" alt="imagen motor" class="contenedor__home__foto"> 
+        <section class="contenedor__home"> <!--Animacion a modo de ejemplo-->
+            <img src="./multimedia/imagenes/auto.webp" alt="imagen motor" class="contenedor__home__foto" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"> 
         </section>
 
         <!--home reseña-->
@@ -70,8 +74,7 @@
             <p class="equipo__parrafo"> Somos un taller especializado en Peugeot, Citroen y DS. Nos capacitamos constantemente para poder brindarles el mejor servicio.
             </p> 
             <br>
-            <div class="equipo__galeria animate__animated animate__slideInLeft ">
-          <!-- Imagenes a modo de ejemplo-->
+            <div class="equipo__galeria animate__animated animate__slideInLeft "> <!--Animacion a modo de ejemplo-->
         
               <img src="./multimedia/imagenes/mecanico1.webp" alt="imagen de grupo de trabajo" class="equipo__galeria__imagen">
        
@@ -210,6 +213,11 @@
     </footer>
 
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 
 </body>
 </html>
